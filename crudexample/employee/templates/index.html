@@ -1,0 +1,80 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head> 
+  <style>
+    body {
+      background-color: coral;
+    }
+    </style> 
+    <meta charset="UTF-8">  
+    <title>Employee Management System</title>  
+    {% load staticfiles %}  
+    <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}"/>   -->
+</head>  
+<h1><center>Employee Management System</center></h1>
+<body background="color:green">  
+  <center>
+<form method="POST" class="post-form" action="/emp">  
+        {% csrf_token %}  
+    <div class="container">  
+<br>  
+    <div class="form-group row">  
+    <label class="col-sm-1 col-form-label"></label>  
+    <div class="col-sm-4">  
+    <h3>Enter Details</h3>  
+    </div>  
+  </div>  
+    <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Employee Id:</label>  
+    <div class="col-sm-4">  
+      {{ form.eid }}  
+    </div>  
+  </div>  
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Employee Designation:</label>  
+    <div class="col-sm-4">  
+      {{ form.designation }}  
+    </div>  
+  </div>  
+    <div class="form-group row">  
+      <label class="col-sm-2 col-form-label">DateOfJoining:</label>  
+      <div class="col-sm-4">  
+          <input type="date" name="dateofjoining" id="id_ename" required maxlength="100" />  
+      </div>  
+    <!-- <div class="col-sm-4">  
+      {{ form.dateofjoining }}  
+    </div>   -->
+  </div>  
+    <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Employee Name:</label>  
+    <div class="col-sm-4">  
+      {{ form.name }}  
+    </div>  
+</div>  
+<div class="form-group row">  
+<label class="col-sm-2 col-form-label">Employee Address:</label>  
+<div class="col-sm-4">  
+  {{ form.address }}  
+</div> 
+<div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Employee PhoneNumber:</label>  
+    <div class="col-sm-4">  
+      {{ form.phonenumber }}  
+    </div> 
+  </div>  
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Employee Email:</label>  
+    <div class="col-sm-4">  
+      {{ form.email }}  
+    </div> 
+    <div class="form-group row">  
+    <label class="col-sm-1 col-form-label"></label>  
+    <div class="col-sm-4">  
+    <button type="submit" class="btn btn-primary">Submit</button>  
+    </div>  
+  </div>  
+    </div>  
+</form>  
+</center>
+</body>  
+</html>  

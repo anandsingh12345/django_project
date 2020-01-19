@@ -1,0 +1,15 @@
+[
+    {
+        "model" : "employee.Employee",
+        "pk" : 5,
+        "fields": {
+            "eid" : "E402",
+            "designation" : "Support",
+            "dateofjoining" : "2020-01-29T08:16:59.844Z",
+            "name" : "peter",
+            "address" : "ncr",
+            "phonenumber" : "9632587412",
+            "email" : "p@gmail.com"
+        }
+    }
+]

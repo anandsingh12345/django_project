@@ -1,0 +1,132 @@
+API Endpoint(Get)-->http://127.0.0.1:8000/api/employee/
+
+Request:
+{
+
+}
+
+Response:
+[
+    {
+        "id": 2,
+        "eid": "E101",
+        "designation": "SD",
+        "dateofjoining": "2020-01-30T00:00:00Z",
+        "name": "Anand",
+        "address": "Chennai",
+        "phonenumber": "963258147",
+        "email": "anandsingh1245@gmail.com"
+    },
+    {
+        "id": 4,
+        "eid": "E303",
+        "designation": "Tester",
+        "dateofjoining": "2020-01-31T00:00:00Z",
+        "name": "Aankit",
+        "address": "Delhi,UP",
+        "phonenumber": "123456789",
+        "email": "a@gmail.com"
+    },
+    {
+        "id": 5,
+        "eid": "E402",
+        "designation": "Support",
+        "dateofjoining": "2020-01-29T08:16:59.844000Z",
+        "name": "peter",
+        "address": "ncr",
+        "phonenumber": "123456789",
+        "email": "p@gmail.com"
+    },
+    {
+        "id": 6,
+        "eid": "E1002",
+        "designation": "metro",
+        "dateofjoining": "2020-02-12T00:00:00Z",
+        "name": "Sarvana",
+        "address": "madurai",
+        "phonenumber": "123456789",
+        "email": "s@gmail.com"
+    }
+]
+
+
+API Endpoint(Get by id)-->http://127.0.0.1:8000/api/employee/5
+
+Request:
+{
+
+}
+
+Response:
+{
+    "id": 5,
+    "eid": "E402",
+    "designation": "Support",
+    "dateofjoining": "2020-01-29T08:16:59.844000Z",
+    "name": "peter",
+    "address": "ncr",
+    "phonenumber": "123456789",
+    "email": "p@gmail.com"
+}
+
+API Endpoint(Post)-->http://127.0.0.1:8000/api/employee/
+
+Request:
+{
+    "eid": "E1002",
+    "designation": "Civil",
+    "dateofjoining": "2020-03-05T08:16:59.844000Z",
+    "name": "bob",
+    "address": "ncr",
+    "phonenumber": "875412357",
+    "email": "bob@gmail.com"
+}
+
+Response:
+{
+    "id": 7,
+    "eid": "E1002",
+    "designation": "Civil",
+    "dateofjoining": "2020-03-05T08:16:59.844000Z",
+    "name": "bob",
+    "address": "ncr",
+    "phonenumber": "875412357",
+    "email": "bob@gmail.com"
+}
+
+API Endpoint(Put)-->http://127.0.0.1:8000/api/employee/7/
+
+Request:
+{
+    "eid": "E1005",//update id 1002 to 1005
+    "designation": "Civil",
+    "dateofjoining": "2020-03-05T08:16:59.844000Z",
+    "name": "bob",
+    "address": "ncr",
+    "phonenumber": "875412357",
+    "email": "bob@gmail.com"
+}
+
+Response:
+{
+    "id": 7,
+    "eid": "E1005",
+    "designation": "Civil",
+    "dateofjoining": "2020-03-05T08:16:59.844000Z",
+    "name": "bob",
+    "address": "ncr",
+    "phonenumber": "875412357",
+    "email": "bob@gmail.com"
+}
+
+API Endpoint(Delete)-->http://127.0.0.1:8000/api/employee/6/
+
+Request:
+{
+
+}
+
+Response:
+{
+ //200 Ok status-->means deleted successfully
+}
